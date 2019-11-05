@@ -1,0 +1,123 @@
+<html>
+<head>
+		<link rel="stylesheet" href="styles.css">
+	<title>Registration Page</title>
+
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<img src="logo1.png" alt="logo">
+		<span>
+			<ul style="float: right;">
+				<li>About Us</li>
+				<li>Contact Us</li>
+			</ul>
+		<br>
+		<br>
+		<span>Social</span><br>
+		<span>Media Links</span></span>
+		
+
+		
+		<div id="nav">
+			<ul>
+				<li></li><li>
+				</li><li>Racks &amp; Trackers</li>
+				<li>PV Module</li>
+				<li>PV Systems</li>
+				<li>Data Analytics</li>
+				<li>Cybersecurity</li>
+			</ul>
+		</div>
+	</div>
+
+	<center>
+
+		<table border="1" width="100%" height="300">
+
+			<tr>
+				<th align="center" colspan="3"> User Dashboard</th>
+			</tr>
+
+			<tr height="150">
+				
+				<td width="10%">
+				</td>
+
+				<td width="60%">
+					<form action="" method="post"  name="myform">
+					
+						<table align="center">
+							<tr>
+								<td>Client:
+								</td>
+
+								<td><input name="client" class="login_field_required" type="text" style="display:block" required/>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									Location:
+								</td>
+
+								<td>
+									<input name="location" class="login_field_required" type="text" style="display:block" required/>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									Product:
+								</td>
+
+								<td>
+									<input name="product" class="login_field_required" type="text" style="display:block" required/>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									Test Standard:
+								</td>
+
+								<td>
+									<input name="test_standard" class="login_field_required" type="text" style="display:block" required/>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									Certificate: 
+								</td>
+
+								<td>
+									<input name="certificate" class="login_field_required" type="text" style="display:block" required/>
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan="2" align="center"><input id="login_button" name="submit" style="font-face :'Comic Sans MS';font-size:larger;height: 30px; width:90px;background-color:lightgray;color:black;" type="submit" value="Join Us"/> 
+								</td>
+							</tr>
+						</table>
+					</form>
+
+				</td>
+				<td width="10%"></td>
+			</tr>
+		</table>
+	</center>
+</body>
+<script>
+$(document).ready( function(){
+
+	$('.login_field_required').val('required');
+
+});
+
+
+</script>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+	<html lang="en">
+<head>
+		<link rel="stylesheet" href="Styles.css">
+	
+</head>
+
+<body onload="getLocation()">
+	<div id="header">
+		<img src="logo1.png" alt="logo">
+		<tr><span>
+			<ul style="float: right;">
+				<li>About Us</li>
+				<li>Contact Us</li>
+			</ul>
+		<br>
+		<br>
+		<span>Social</span><br>
+		<span>Media Links</span></span>
+		
+
+		</tr>
+		<div id="nav">
+			<ul>
+				<li><li>
+				<li>Racks & Trackers</li>
+				<li>PV Module</li>
+				<li>PV Systems</li>
+				<li>Data Analytics</li>
+				<li>Cybersecurity</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="content">
+		<div class="columnLeft" id="cL">
+			
+				<ul>
+					<li><a href ="Registration.html" class="a">Register</a></li>
+					<li>|</li>
+					<li><a href ="Login.html" class="a">Login</a></li>
+				</ul>
+		
+
+			<h4>PV Module</h4>
+			<ul>
+				<li>Testing & Certification</li><br>
+				<li>PV Rating</li>
+			</ul>
+
+			<h4>PV System Performance</h4>
+			<ul>
+				<li>Monitoring & Inspection</li><br>
+				<li>Performance Analysis</li><br>
+				<li>Compare system</li><br>
+				<li>Certification</li>
+			</ul>
+
+			<h4>Data Analytics</h4>
+			<ul>
+				<li>Module lifetime prediction</li><br>
+				<li>Energy Prediction</li>
+			</ul>
+			<h4>Cybersecurity and Smart Grid Technologies</h4>
+
+			<h4>Solar PV University</h4>
+
+		</div>
+
+		<div class="columnCentre" id="cC">
+			<center>
+			<h4>Feature Contents</h4>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/xKxrkht7CpY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</center>
+		</div>
+		<div class="columnRight" id="cR">
+			<center>
+			<h4 class="a">News & Events</h4>
+			<p><a href="#" class="b">PhotoVoltaic Technical Conference to take place in Marseille, France from 26 to 28 April 2017</a></p>
+			<br>
+			<p><a href ="#" class="b">Trump is next US President</a></p>
+			<br>
+			<p><a href ="#" class="b">TSyrian forces recapture Aleppo</a></p>
+			<br>
+			<p><a href ="#" class="b">TSenate votes on SCOTUS nominee</a></p>
+			</center>
+		</div>
+	</div>
+	
+	
+	<div id="footer">
+		<h4>solarPV</h4>
+		<span> @2019 All Rights Reserved</span>
+		<p style="padding: 0px 0px 0px 10px;">	201 42nd St San Solaris CA 20314 USA | 2538675309 | contact@solarPV.com | https://solarPV.com</p>
+		<ul>
+			<li>Site Map</li>
+			<li>|</li>
+			<li>Terms & Conditions</li>
+			<li>|</li>
+			<li>Privacy Policy</li>
+			<li>|</li>
+			<li>About Us</li>
+			<p align="center" id="location">Current Location: </p>
+			<center><input onchange="bgColourChange()" type="range" min="0" max="255" value="255" class="slider" id="myRange">
+			<p id="demo"></p></center>
+		</ul>
+		
+	</div>
+
+	
+	<script>
+		var locationText = document.getElementById("location");
+
+		function getLocation() {
+		  if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition);
+		  } else { 
+			locationText.innerHTML = "Your browser does not support Geolocation";
+		  }
+		}
+
+		function showPosition(position) {
+		  locationText.innerHTML = "Current Location: Latitude: " + Math.round(position.coords.latitude) + 
+		  "	/ Longtitude: " + Math.round(position.coords.longitude);
+		}
+		
+				var slider = document.getElementById("myRange");
+		var output = document.getElementById("demo");
+		//output.innerHTML = slider.value;
+
+		slider.oninput = function() {
+		  //output.innerHTML = this.value;
+		  document.body.style.backgroundColor = 'rgb(' + this.value + ',' + this.value + ',' + this.value + ')';
+		  document.body.style.color = 'rgb(' + (255 - this.value) + ',' + (255 - this.value) + ',' + (255 - this.value) + ')';
+		  document.getElementById("header").style.borderColor = 'rgb(' + (255 - this.value) + ',' + (255 - this.value) + ',' + (255 - this.value) + ')'; 
+		  document.getElementById("nav").style.borderColor = 'rgb(' + (255 - this.value) + ',' + (255 - this.value) + ',' + (255 - this.value) + ')';  
+		  document.getElementById("footer").style.borderColor = 'rgb(' + (255 - this.value) + ',' + (255 - this.value) + ',' + (255 - this.value) + ')'; 
+		  document.getElementById("cL").style.borderColor = 'rgb(' + (255 - this.value) + ',' + (255 - this.value) + ',' + (255 - this.value) + ')';
+		  document.getElementById("cC").style.borderColor = 'rgb(' + (255 - this.value) + ',' + (255 - this.value) + ',' + (255 - this.value) + ')';
+		  document.getElementById("cR").style.borderColor = 'rgb(' + (255 - this.value) + ',' + (255 - this.value) + ',' + (255 - this.value) + ')';
+		}
+	</script>
+</body>
+</html>
