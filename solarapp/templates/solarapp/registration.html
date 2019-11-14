@@ -1,6 +1,7 @@
 <html>
 <head>
-		<link rel="stylesheet" href="styles.css">
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'solarapp/style.css' %}">
 	<title>Registration Page</title>
 
 <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -8,7 +9,7 @@
 
 <body>
 	<div id="header">
-		<img src="logo1.png" alt="logo">
+		<img src="{% static 'solarapp/logo1.png' %}" alt="logo">
 		<span>
 			<ul style="float: right;">
 				<li>About Us</li>

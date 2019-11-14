@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'y!h)z0oq45d345kzee04%*p5ayw=-)4o)g$@l1rc!o*z3%8_*^'
+SECRET_KEY = 'gb2x+*!dx-wlwx)#k8k7r!yon2=cnna(wmcpwb(weun3v8(owp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+	'solarapp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
