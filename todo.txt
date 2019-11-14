@@ -1,3 +1,0 @@
-Need to create a database based on the schema diagram
-Need to determine what is meant by 'necessary models/tables' means
-Need to insert/retrieve/update/delete data from the database
