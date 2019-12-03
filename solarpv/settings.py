@@ -26,7 +26,7 @@ SECRET_KEY = 'gb2x+*!dx-wlwx)#k8k7r!yon2=cnna(wmcpwb(weun3v8(owp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['solarpv2.azurewebsites.net']
+ALLOWED_HOSTS = ['solarpv2.azurewebsites.net','127.0.0.1']
 
 
 # Application definition
