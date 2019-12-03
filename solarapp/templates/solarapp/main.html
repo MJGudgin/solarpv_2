@@ -2,13 +2,13 @@
 	<html lang="en">
 <head>
 		{% load static %}
-		<link rel="stylesheet" href="solarapp/style.css">
+		<link rel="stylesheet" href="{% static 'solarapp/style.css' %}">
 	
 </head>
 
 <body onload="getLocation()">
 	<div id="header">
-		<img src="{'solarapp/logo1.png' %}" alt="logo">
+		<img src="{% static 'solarapp/logo1.png' %}" alt="logo">
 		<tr><span>
 			<ul style="float: right;">
 				<li>About Us</li>
